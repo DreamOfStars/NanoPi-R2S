@@ -9,7 +9,7 @@ jobs:
 
   build:
 
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
 
@@ -92,6 +92,9 @@ jobs:
           
           git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
           git clone https://github.com/NateLol/luci-app-oled
+          
+          git clone https://github.com/KumaTea/MentoHUST-SYSU-OpenWrt.git package/MentoHUST-SYSU
+          git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-mentohust
         
       - name: Install Clash Binaries
         run: |
