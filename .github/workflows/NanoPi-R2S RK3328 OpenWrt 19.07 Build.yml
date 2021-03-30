@@ -203,8 +203,8 @@ jobs:
           rm -rf ./artifact/
           mkdir -p ./artifact/
 
-          cp code/out/ ./artifact/
-          cp code/friendlywrt/ ./artifact/
+          cp -r code/out/ ./artifact/
+          cp -r code/friendlywrt/ ./artifact/
 
       - name: Upload Artifact
         uses: actions/upload-artifact@master
